@@ -1,0 +1,35 @@
+.comment-group{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40rpx;
+}
+
+.comment-person{
+  flex-basis: 70rpx;
+  margin-right: 20rpx;
+}
+
+.comment-person .avatar{
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 40rpx;
+}
+
+.comment-item-list{
+  flex: 1;
+}
+
+.comment-username-group{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10rpx;
+}
+
+.comment-username-group .comment-username{
+  margin-right: 20rpx;
+}
+
+.comment-item-list .comment-date{
+  margin-bottom: 10rpx;
+}

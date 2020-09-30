@@ -1,0 +1,38 @@
+<view class="container">
+	<view class="detail-header">
+		<view class="detail-title">{{detail.ch_title}} {{detail.zh_title}} ({{detail.year}})</view>
+		<view class="detail-item">
+			<view class="left-item">
+				<view class="rate-item">
+					<stars rate="{{detail.rate}}"></stars>
+					<view class="evaluate">{{detail.rate_num}}人评价</view>
+				</view>
+				<view class="item-label-group">
+					<view class="item-label">{{detail.length_time}} {{detail.types_name}}</view>
+					<view class="item-show">{{detail.is_use}}</view>
+					<view class="item-actors">{{detail.actors}}</view>
+				</view>
+			</view>
+			<view class="right-item">
+				<image src="{{detail.image_path}}"></image>
+			</view>
+		</view>
+	</view>
+
+	<view class="label-group">
+		<view class="label-title">豆瓣成员常用标签</view>
+		<view class="label">
+			<text>超级英雄</text><text>特效</text><text>美国</text><text>超级英雄</text><text>特效</text><text>美国</text><text>超级英雄</text><text>特效</text><text>美国</text>
+		</view>
+	</view>
+
+	<view class="comment-list" wx:if="{{detail.comments}}">
+		<view class="comment-title">短评({{detail.comment_num}})</view>
+		 
+		<commentItem comments="{{detail.comments}}"></commentItem>
+
+    <navigator class="more-comment" url="/pages/comment/comment?id={{detail.id}}&title={{detail.ch_title}}&image_path={{detail.image_path}}&rate={{detail.rate}}&total={{detail.comment_num}}">查看更多评论</navigator>
+	</view>
+
+	<view wx:else class="comment-list"></view>
+</view>

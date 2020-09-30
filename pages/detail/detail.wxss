@@ -1,0 +1,95 @@
+.container{
+  padding: 40rpx 20rpx;
+}
+
+.detail-title{
+  font-size: 36rpx;
+  font-weight: bolder;
+}
+
+.detail-item{
+  margin-top: 20rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 32rpx;
+}
+
+.rate-item{
+  display: flex;
+  justify-content: flex-start;
+  font-size: 24rpx;
+  align-items: center;
+  margin-top: 10rpx;
+
+}
+
+.evaluate{
+  margin-left: 20rpx;
+}
+
+.item-label-group{
+  margin-top: 20rpx;
+}
+.left-item{
+  flex:1;
+}
+.right-item{
+  flex-basis: 200rpx;
+  height: 284rpx;
+}
+
+.right-item image{
+  width: 100%;
+  height: 100%;
+}
+
+.item-show{
+  margin-top: 10rpx;
+}
+
+.item-actors{
+  margin-top: 10rpx;
+}
+
+.label-group{
+  margin-top: 40rpx;
+}
+
+.label-title{
+  font-size: 32rpx;
+  color: #b3b3b3;
+}
+.label{
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.label text{
+  padding: 10rpx;
+  background-color: #f5f5f5;
+  font-size: 24rpx;
+  color: #353535;
+  border-radius: 40rpx;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+
+.comment-list{
+  width: 100%;
+}
+
+.comment-title{
+  margin-top: 20rpx;
+  color: #b3b3b3;
+}
+
+
+.more-comment{
+  margin-top: 40rpx;
+  text-align: center;
+  color: #41be57;
+}

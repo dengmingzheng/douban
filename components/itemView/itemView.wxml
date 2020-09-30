@@ -1,0 +1,12 @@
+<navigator class="item-navigator" url="/pages/detail/detail?id={{item.id}}" wx:for="{{list}}" wx:for-item="item" wx:key="id">
+ 	<view class="item-group">
+ 		<view class="thumbnail-group">
+ 			<image class="thumbnail" src="{{item.image_path}}"></image>
+ 		</view>
+ 		<view class="item-title">{{item.ch_title}}</view>
+ 		<stars rate="{{item.rate}}"></stars>
+ 	</view>
+</navigator>
+
+
+

@@ -1,0 +1,12 @@
+<view class="rate-group">
+  <block wx:for="{{lightStars}}" wx:key="*this">
+     <image src="../../images/rate_light.png" style="width:{{starWidth}}rpx;height:{{starHeight}}rpx"></image>
+  </block>
+  <block wx:for="{{haltStars}}" wx:key="*this">
+     <image src="../../images/rate_half.png" style="width:{{starWidth}}rpx;height:{{starHeight}}rpx"></image>
+  </block>
+  <block wx:for="{{darkStars}}" wx:key="*this">
+     <image src="../../images/rate_gray.png" style="width:{{starWidth}}rpx;height:{{starHeight}}rpx"></image>
+  </block>
+	<text class="rateText" style="font-size:{{fontSize}}rpx; color:{{fontColor}}">{{rateText}}</text>
+</view>

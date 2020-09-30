@@ -1,0 +1,67 @@
+<searchBar isNavigator="{{true}}"></searchBar>
+
+<view class="module-group" wx:if="{{movies}}">
+  <view class="module-top">
+     <view class="module-title">电影</view>
+     <navigator class="module-more" url="/pages/list/list?type=movies">更多</navigator>
+  </view>
+  <scroll-view class="module-scroll-view" scroll-x="{{true}}">
+      <itemView list="{{movies}}"></itemView>
+  </scroll-view>
+</view>
+
+<view class="module-group" wx:if="{{tvs}}">
+  <view class="module-top">
+     <view class="module-title">电视剧</view>
+     <navigator class="module-more" url="/pages/list/list?type=tvs">更多</navigator>
+  </view>
+  <scroll-view class="module-scroll-view" scroll-x="{{true}}">
+      <itemView list="{{tvs}}"></itemView>
+   
+  </scroll-view>
+</view>
+
+<view class="module-group" wx:if="{{shows}}">
+  <view class="module-top">
+     <view class="module-title">综艺</view>
+     <navigator class="module-more" url="/pages/list/list?type=shows">更多</navigator>
+  </view>
+  <scroll-view class="module-scroll-view" scroll-x="{{true}}">
+      <itemView list="{{shows}}"></itemView>
+   
+  </scroll-view>
+</view>
+
+
+<view class="module-group" wx:if="{{comics}}">
+  <view class="module-top">
+     <view class="module-title">动漫</view>
+     <navigator class="module-more" url="/pages/list/list?type=comics">更多</navigator>
+  </view>
+  <scroll-view class="module-scroll-view" scroll-x="{{true}}">
+      <itemView list="{{comics}}"></itemView>
+   
+  </scroll-view>
+</view>
+
+<view class="module-group" wx:if="{{shorts}}">
+  <view class="module-top">
+     <view class="module-title">短片</view>
+     <navigator class="module-more" url="/pages/list/list?type=shorts">更多</navigator>
+  </view>
+  <scroll-view class="module-scroll-view" scroll-x="{{true}}">
+      <itemView list="{{shorts}}"></itemView>
+   
+  </scroll-view>
+</view>
+
+<view class="module-group" wx:if="{{records}}">
+  <view class="module-top">
+     <view class="module-title">纪录片</view>
+     <navigator class="module-more" url="/pages/list/list?type=records">更多</navigator>
+  </view>
+  <scroll-view class="module-scroll-view" scroll-x="{{true}}">
+      <itemView list="{{records}}"></itemView>
+   
+  </scroll-view>
+</view>

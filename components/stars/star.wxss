@@ -1,0 +1,10 @@
+.rate-group{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rate-group .rateText{
+  margin-left: 10rpx;
+}
+

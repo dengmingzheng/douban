@@ -1,0 +1,5 @@
+<searchBar></searchBar>
+
+<view class="container">
+    <itemView list="{{list}}"></itemView>
+</view>

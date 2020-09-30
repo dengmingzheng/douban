@@ -1,0 +1,22 @@
+<searchBar bindsearchEvent="onSearchEvent"></searchBar>
+
+<view class='history-list-group' wx:if="{{histories && !items}}">
+  <view class='history-title'>
+    <view class='title'>历史记录</view>
+    <view class='clear' bindtap="onClearEvent">清除</view>
+  </view>
+  <navigator class='history-group' wx:for="{{histories}}" wx:key="id">{{item.title}}</navigator>
+  
+</view>
+
+<view class="container">
+   
+     <view wx:key="id" catchtap="onItemTapEvent" data-id="{{item.id}}" data-title="{{item.ch_title}}" class="item-group" wx:if="{{items}}" wx:for="{{items}}">
+          <image class="item-image" src="{{item.image_path}}"></image>
+          <view class="item-content">
+               <view class="item-title">{{item.ch_title}}</view>
+               <view class="item-rate">{{item.rate}}/{{item.year}}</view>
+          </view>
+     </view> 
+   
+</view>

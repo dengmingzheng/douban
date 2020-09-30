@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "stars":"/components/stars/star",
+    "commentItem":"/components/commentItem/commentItem"
+  }
+}

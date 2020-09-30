@@ -1,0 +1,15 @@
+<view class="comment-group" wx:for="{{comments}}" wx:for-item="comments" wx:key="id">
+			<view class="comment-person">
+				<image class="avatar" src="../../images/avatar.jpg"></image>
+			</view>
+			<view class="comment-item-list">
+				<view class="comment-username-group">
+					<view class="comment-username">{{comments.user.name}}</view>
+					<stars rate="{{comments.rate}}"></stars>
+				</view>
+				<view class="comment-date">{{comments.created_at}}</view>
+				<view class="comment">
+				   {{comments.content}}
+				</view>
+      </view>
+</view>
